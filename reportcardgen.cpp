@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //cout, cin
 #include <string>
 
 using namespace std;
@@ -44,6 +44,7 @@ int main()
 	else {
 		goto startMenuInput;
 	}
+  // takes input for names and grade percentages for each classs
 	gradeInput: {
 		cout << "STUDENT LAST NAME: ";
 		cin >> studentLastName;
@@ -155,6 +156,7 @@ int main()
 		gpa = (avgGrade/20)-1;
 		goto reportCard; 
 	}
+  // Makes a report card for the student
 	reportCard: {
 		cout << "\n\nREPORT CARD FOR " << studentLastName << ", " << studentFirstName << endl;
 		cout << "======================\n";
